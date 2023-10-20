@@ -1,6 +1,6 @@
 async function getZones(token,accountid) {
 
-            const apiUrl = `https://api.cloudflare.com/client/v4/zones?account.id=${accountid}&per_page=100`; // Replace with the actual API URL
+            const apiUrl = `https://api.cloudflare.com/client/v4/zones?account.id=${accountid}&per_page=100`; //// not doing pagination 
     
             try {
                 const response = await fetch(apiUrl, {
